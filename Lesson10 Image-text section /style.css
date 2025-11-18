@@ -223,6 +223,7 @@ p {
 
 
    /* lesson 10 */
+   /* About */
    .about{
     padding: 80px 0;
     background-color: #ffffff;
@@ -260,3 +261,46 @@ p {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.9);
    }
+
+/* Community */
+.community{
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+.community-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-direction: row-reverse;
+}
+.community-text{
+    flex: 1;
+}
+.community-image{
+    flex: 1;
+}
+.community-text h2 {
+    color: #3450db;
+    margin-bottom: 25px;
+}
+.community-text p{
+    color: #3498db;
+}
+.join-btn{
+    background: #f89040;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.community-image img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.8);
+}
+.community-text, .community-image {
+    flex: 1;
+    min-width: 0; /* Prevent minimum width overflow */
+}
