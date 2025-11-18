@@ -252,12 +252,11 @@ p {
    .about-text p{
     color: #3498db;
     font-size: 1.1rem;
-    line-height 1.8;
+    line-height:1.8;
     margin-bottom: 1.5rem;
    }
 
    .about-image img{
-    width: 100%;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.9);
    }
@@ -299,8 +298,4 @@ p {
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.8);
-}
-.community-text, .community-image {
-    flex: 1;
-    min-width: 0; /* Prevent minimum width overflow */
 }
