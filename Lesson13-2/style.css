@@ -90,10 +90,22 @@ h1 {
 
 /* ACTIVITY 1: BOUNCING BALL */
 /* TODO: Create .ball styles here */
-
+.ball{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:orange ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Apply the animation */
+    animation: bounce 1s ease-in-out infinite;
+}
 
 /* TODO: Create @keyframes bounce here */
-
+@keyframes bounce {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-75px);}
+    100%{transform: translateY(0)}
+}
 
 /* ACTIVITY 2: PULSING BUTTON */
 /* TODO: Create .pulse-button styles here */
