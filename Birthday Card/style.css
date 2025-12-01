@@ -1,0 +1,146 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ensures it takes the full viewport height */
+    background-color: rgb(196, 251, 251);
+    border-color: 3px solid black;
+}
+
+.text {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.heart {
+    font-size: 60px;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+.birthday-card {
+    width: 100vw;
+    /* Full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #bf9ef8, #98bfff);
+    /* Example gradient */
+    border-radius: 10px;
+    padding: 40px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.birthday-text {
+    color: #fffbe9;
+    /* Light text color */
+    font-size: 6vw;
+    /* Responsive font size */
+    font-family: serif;
+    margin: 0 20px;
+    /* Space between emojis and text */
+    font-weight: bold;
+}
+
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    /* centers the .profile box horizontally */
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    /* needed so flexbox knows the box size */
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* keeps the image clipped to the circle */
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.mom {
+    font-family: "Lavishly Yours", cursive;
+    font-size: 100px;
+    font-style: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.card-text {
+    /* margin: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.card-content {
+    display: flex;
+    margin: 5px 20px 5px 40px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature {
+    font-size: 60px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(192, 227, 255);
+    /* circle */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transform: 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.2) rotate(10deg);
+    cursor: pointer;
+}
+
+.content {
+    font-size: 25px;
+    text-align: center;
+}
+
+.sub-box {
+    background: linear-gradient(180deg, rgb(243, 189, 198), rgb(252, 250, 250));
+    padding: 30px;
+    border-radius: 8px;
+    width: 200px;
+}
