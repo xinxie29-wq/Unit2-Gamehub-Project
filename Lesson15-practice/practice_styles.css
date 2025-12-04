@@ -40,7 +40,7 @@
    padding: 60px 40px;
 }
 
-.section-title{
+.section-title {
    color: #4fc3f7;
    font-size: 36px;
    text-align: center;
@@ -72,7 +72,7 @@
    =========================================== */
 
 /* YOUR CODE FOR TASK 2 HERE: */
-.services-container{
+.services-container {
    display: flex;
    gap: 30px;
    justify-content: center;
@@ -110,11 +110,27 @@
    =========================================== */
 
 /* YOUR CODE FOR TASK 3 HERE: */
-.service-card{
-   
+.service-card {
+   border-radius: 15px;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
+.card-icon {
+   font-size: 48px;
+   margin-bottom: 15px;
+}
 
+.card-title {
+   color: white;
+   font-size: 22px;
+   margin-bottom: 15px;
+}
+
+.card-description {
+   color: #cccccc;
+   font-size: 15px;
+   line-height: 1.6;
+}
 
 /* ===========================================
    TASK 4: Hover Effect with Transition (20 points)
@@ -132,7 +148,14 @@
    =========================================== */
 
 /* YOUR CODE FOR TASK 4 HERE: */
+.service-card {
+   transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
 
+.service-card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 15px 35px with rgba(0, 0, 0, 0.4);
+}
 
 
 
@@ -150,7 +173,17 @@
    =========================================== */
 
 /* YOUR CODE FOR TASK 5 HERE: */
-
+@media (max-width:768px) {
+   .services-container{
+      flex-direction: column;
+   }
+   .section-title{
+      font-size: 28px;
+   }
+   .services{
+      padding: 40px 20px;
+   }
+}
 
 
 
